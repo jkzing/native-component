@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="handleClick">
     <card :text="motto"></card>
     <div>date: {{ date }}</div>
   </div>
@@ -16,7 +16,7 @@ export default {
 
   data () {
     return {
-      motto: 'Hello World from Native Component'
+      motto: 'Hello World from mpvue component'
     }
   },
 
@@ -25,6 +25,10 @@ export default {
   },
 
   methods: {
+    handleClick () {
+      console.log('click from mpvue component')
+      this.$mp.page.triggerEvent('helloclick', { from: 'mpvue' }, {})
+    }
   }
 }
 </script>

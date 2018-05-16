@@ -10,6 +10,6 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-    <hello date="{{current}}"></hello>
+    <hello date="{{current}}" bind:helloclick="handleHelloClick"></hello>
   </view>
 </view>

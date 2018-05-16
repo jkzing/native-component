@@ -21,6 +21,9 @@ Page({
       current: Date.now()
     })
   },
+  handleHelloClick: function (e) {
+    console.log('event from hello handled', e)
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
