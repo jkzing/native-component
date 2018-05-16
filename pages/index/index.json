@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "hello": "../../mp-components/dist/pages/index/main"
+  }
+}
